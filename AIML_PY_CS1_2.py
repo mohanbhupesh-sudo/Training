@@ -1,10 +1,11 @@
 import numpy as np
 # 1. Create a function that takes dimensions as tuples e.g. (3,3) and a numeric value and returns a Numpy array of the given dimension filled with the given value e.g.: solve((3,3), 5) will return [[5, 5, 5], [5, 5, 5], [5, 5, 5]]
+
 def solve(dimensions, value):
     # Create a Numpy array of the given dimensions filled with the specified value
     array = np.full(dimensions, value)
     return array
-print(solve((3,3), 5))
+print(solve((3,3), 5)) 
 
 # 2. Create a method that takes n Numpy arrays of the same dimensions, sums them and returns the answer
 def sum_arrays(*arrays):
